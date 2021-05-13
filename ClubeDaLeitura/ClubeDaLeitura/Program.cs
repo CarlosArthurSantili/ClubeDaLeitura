@@ -63,6 +63,11 @@ namespace ClubeDaLeitura
                     {
                         ((TelaEmprestimo)telaSelecionada).DevolucaoEmprestimo();
                     }
+                    else if (opcao == "5")
+                    {
+                        ((TelaEmprestimo)telaSelecionada).VisualizarEmprestimosEncerradosDoMes();
+                        Console.ReadLine();
+                    }
                 }
 
                 else if (telaSelecionada is TelaAmiguinho)

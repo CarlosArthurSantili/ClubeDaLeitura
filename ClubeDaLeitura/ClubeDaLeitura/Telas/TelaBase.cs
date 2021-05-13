@@ -22,10 +22,5 @@ namespace ClubeDaLeitura.Telas
             return "";
         }
 
-        
-
-        protected void ConfigurarTela(string subtitulo) { }
-
-        protected void ApresentarMensagem(string mensagem) { }
     }
 }

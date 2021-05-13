@@ -160,7 +160,7 @@ namespace ClubeDaLeitura.Telas
             }
         }
 
-        public void VisualizarEmprestimosEncerradosDoMes(int mes)
+        public void VisualizarEmprestimosEncerradosDoMes()
         {
             Console.Clear();
             Emprestimo[] emprestimos = controladorEmprestimo.SelecionarTodosEmprestimos();
@@ -174,7 +174,8 @@ namespace ClubeDaLeitura.Telas
             }
             else
             {
-                Console.WriteLine("Visualização de Emprestimos Encerrados do Mês: ", mes);
+
+                Console.WriteLine("Visualização de Emprestimos Encerrados no Último Mês: ", DateTime.Now.Month);
 
                 string configuraColunasTabela = "{0,-10} | {1,-10} | {2,-10} | {3,-10} | {4,-10}";
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -190,7 +191,7 @@ namespace ClubeDaLeitura.Telas
                 {
                     if (emprestimo.dataDevolucao != DateTime.MinValue)
                     {
-                        if (emprestimo.dataDevolucao.Month == mes)
+                        if (emprestimo.dataDevolucao.Month == DateTime.Now.Month)
                         {
                             Console.WriteLine("{0,-10} | {1,-10} | {2,-10} | {3,-10} | {4,-10}",
                                 emprestimo.id, emprestimo.revista.id, emprestimo.amiguinho.nome, emprestimo.dataEmprestimo, emprestimo.dataDevolucao);
@@ -383,9 +384,10 @@ namespace ClubeDaLeitura.Telas
         public override string ObterOpcao()
         {
             Console.WriteLine("Digite 1 para inserir novo emprestimo");
-            Console.WriteLine("Digite 2 para visualizar emprestimos em aberto");
-            Console.WriteLine("Digite 3 para visualizar emprestimos encerrados");
+            Console.WriteLine("Digite 2 para visualizar todos emprestimos em aberto");
+            Console.WriteLine("Digite 3 para visualizar todos emprestimos encerrados");
             Console.WriteLine("Digite 4 para encerrar um emprestimo");
+            Console.WriteLine("Digite 5 para visualizar emprestimos encerrados do mês");
 
             Console.WriteLine("Digite S para sair");
 
