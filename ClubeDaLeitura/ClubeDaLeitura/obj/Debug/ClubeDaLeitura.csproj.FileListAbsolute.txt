@@ -1,7 +1,0 @@
-C:\Users\Carlos\source\repos\ClubeDaLeitura\ClubeDaLeitura\bin\Debug\ClubeDaLeitura.exe.config
-C:\Users\Carlos\source\repos\ClubeDaLeitura\ClubeDaLeitura\bin\Debug\ClubeDaLeitura.exe
-C:\Users\Carlos\source\repos\ClubeDaLeitura\ClubeDaLeitura\bin\Debug\ClubeDaLeitura.pdb
-C:\Users\Carlos\source\repos\ClubeDaLeitura\ClubeDaLeitura\obj\Debug\ClubeDaLeitura.csprojAssemblyReference.cache
-C:\Users\Carlos\source\repos\ClubeDaLeitura\ClubeDaLeitura\obj\Debug\ClubeDaLeitura.csproj.CoreCompileInputs.cache
-C:\Users\Carlos\source\repos\ClubeDaLeitura\ClubeDaLeitura\obj\Debug\ClubeDaLeitura.exe
-C:\Users\Carlos\source\repos\ClubeDaLeitura\ClubeDaLeitura\obj\Debug\ClubeDaLeitura.pdb
